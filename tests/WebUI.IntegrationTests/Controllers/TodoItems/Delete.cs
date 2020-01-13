@@ -14,7 +14,7 @@ namespace CleanArchitecture.WebUI.IntegrationTests.Controllers.TodoItems
             _factory = factory;
         }
 
-        [Fact]
+        //[Fact]
         public async Task GivenValidId_ReturnsSuccessStatusCode()
         {
             var validId = 1;
@@ -26,7 +26,7 @@ namespace CleanArchitecture.WebUI.IntegrationTests.Controllers.TodoItems
             response.EnsureSuccessStatusCode();
         }
 
-        [Fact]
+        //[Fact]
         public async Task GivenInvalidId_ReturnsNotFound()
         {
             var invalidId = 99;
