@@ -42,11 +42,13 @@ steps:
     packageType: sdk
     version: 2.2.203
     installationPath: $(Agent.ToolsDirectory)/dotnet
+    
 - task: SonarCloudAnalyze@1
 
 - task: SonarCloudPublish@1
   inputs:
     pollingTimeoutSec: '300'
+
 - task: DotNetCoreCLI@2
   inputs:
     command: publish
